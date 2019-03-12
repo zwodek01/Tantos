@@ -506,12 +506,14 @@ h2 span {
     background: url(img/city-937541.png);
     background-size: cover;
     background-position: center;
+
 }
 
 .footer .container {
     background-color: rgba(59, 67, 76, 0.9);
     height: 100%;
     width: 100%;
+
 }
 
 .footer .form {
@@ -533,7 +535,7 @@ h2 span {
     width: 275px;
     height: 50px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 10px;
     border: none;
 }
