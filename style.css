@@ -345,7 +345,6 @@ h2 span {
     width: 100%;
 }
 
-
 .card {
     width: 220px;
     height: 220px;
@@ -453,6 +452,9 @@ h2 span {
     color: #3b434c;
     font-family: "Open Sans";
     font-size: 14px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .opinion {
