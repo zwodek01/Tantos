@@ -35,12 +35,13 @@ header {
 .page-header .container,
 .job .container,
 .newsletter .container,
-.our-works .container {
+.our-works .container,
+.workers .container,
+.footer .container {
     width: 80%;
     height: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: #f7600e;
 }
 
 
@@ -79,7 +80,7 @@ header {
     height: 3px;
     width: 30px;
     border-radius: 15px;
-    background-color: white;
+    background-color: #f7600e
 }
 
 .menu-collapsed {
@@ -320,13 +321,13 @@ header {
     margin: 30px 0;
 }
 
-.description-work h2 {
+h2 {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 35px;
 }
 
-.description-work h2 span {
+h2 span {
     color: #f7600e;
 }
 
@@ -338,7 +339,7 @@ header {
     margin: 10px 0;
 }
 
-.wrapper {
+.our-works .wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -495,4 +496,60 @@ header {
     text-align: center;
     margin: 30px 0;
     color: #ffffff;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: url(img/city-937541.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .container {
+    background-color: rgba(59, 67, 76, 0.9);
+    height: 100%;
+    width: 100%;
+}
+
+.footer .form {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.form h2 {
+    padding: 20px 0;
+}
+
+.caption form {
+    display: flex;
+    flex-direction: column;
+}
+
+.caption form input {
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.caption form input:nth-last-of-type(1) {
+    border: none;
+    border-radius: 10px;
+    background-color: #f7600e;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.caption form input:nth-last-of-type(2) {
+    height: 200px;
+}
+
+.caption picture {
+    display: flex;
+    justify-content: space-around;
 }
