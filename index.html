@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tantos - PSD to HTML</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans:400,800" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,10 +14,11 @@
 </head>
 
 <body>
+
     <header>
-        <section class="page-header">
+        <section class="intro">
             <picture>
-                <img src="img/Logo.png" alt="" class="logo">
+                <img class="logo" src="img/Logo.png" alt="Logo Tantos">
             </picture>
             <div class="container">
                 <div class="menu-collapsed">
@@ -40,13 +41,13 @@
                     </nav>
                 </div>
                 <div class="description">
-                    <h1>WE DESIGN<span>THINGS</span></h1>
+                    <h1>WE DESIGN<span> THINGS</span></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
                 <div class="buttons">
-                    <button>HIRE US</button>
-                    <button>OUR WORKS</button>
+                    <button class="btn-1">HIRE US</button>
+                    <button class="btn-2">OUR WORKS</button>
                 </div>
                 <div class="arrow">
                     <span></span>
@@ -59,51 +60,50 @@
     <main>
         <section class="job">
             <div class="container">
-                <div class="products">
+                <div class="product">
                     <picture>
                         <img src="img/drukarka.png" alt="">
                     </picture>
                     <h2>PRINT DESIGN</h2>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                 </div>
-                <div class="products">
+                <div class="product">
                     <picture>
                         <img src="img/komp.png" alt="">
                     </picture>
-                    <h2>PRINT DESIGN</h2>
+                    <h2>WEB DESIGN</h2>
                     <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <div class="products">
+                <div class="product">
                     <picture>
                         <img src="img/mobile.png" alt="">
                     </picture>
-                    <h2>PRINT DESIGN</h2>
+                    <h2>APP DESIGN</h2>
                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                 </div>
-                <div class="products">
+                <div class="product">
                     <picture>
                         <img src="img/pen.png" alt="">
                     </picture>
-                    <h2>PRINT DESIGN</h2>
+                    <h2>LOGO DESIGN</h2>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
                 </div>
             </div>
+            </div>
         </section>
-
         <section class="newsletter">
             <div class="newsletter-container">
                 <div class="container">
                     <form action="">
                         <input type="email" name="email" placeholder="Enter Your email adress for newsletter">
-                        <input type="submit" value="SUBSCRIBE">
+                        <input class="btn-1" type="submit" value="SUBSCRIBE">
                     </form>
                 </div>
             </div>
         </section>
-
         <section class="our-works">
             <div class="container">
-                <div class="description-work">
+                <div class="description">
                     <h2>OUR <span>WORKS</span></h2>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat</p>
@@ -152,15 +152,14 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn">SHOW MORE</button>
+                <button class="btn-3">SHOW MORE</button>
             </div>
         </section>
-
         <section class="opinion">
-            <div class="container">
-                <div class="slider">
-                    <div class="caption">
-                        <img src="img/Warstwa_9.png" alt="">
+            <div class="opinion-container">
+                <div class="container">
+                    <img src="img/Warstwa_9.png" alt="">
+                    <div class="description">
                         <h2>These guys are incredible! I get my project in 10 days and it was awesome!
                             Very good service! Highly recommended!</h2>
                         <p>John Smith</p>
@@ -168,76 +167,111 @@
                 </div>
             </div>
         </section>
-
-        <section class="our-works">
+        <section class="our-team">
             <div class="container">
-                <div class="description-work">
+                <div class="description">
                     <h2>OUR <span>TEAM</span></h2>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                         totam rem </p>
                 </div>
                 <div class="wrapper">
-                    <div class="card"><img src="img/Warstwa_5.png" />
-                        <div class="info">
-                            <h2>Catherina Gail</h2>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    <div class="person">
+                        <div class="card"><img src="img/Warstwa_5.png" />
+                            <div class="info">
+                                <h2>Catherina Gail</h2>
+                                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card"><img src="img/Warstwa_6.png" />
-                        <div class="info">
-                            <h2>Harvey Rube</h2>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <div class="icons"></div>
-                        </div>
-                    </div>
-                    <div class="card"><img src="img/Warstwa_7.png" />
-                        <div class="info">
-                            <h2>Janet Pris</h2>
-                            <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                            <div class="icons"></div>
-                        </div>
-                    </div>
-                    <div class="card"><img src="img/Warstwa_8.png" />
-                        <div class="info">
-                            <h2>Kevin Ward</h2>
-                            <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
-                            <div class="icons"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <section class="footer">
-                <div class="container">
-                    <div class="form">
-                        <div class="caption">
-                            <h2>OUR <span>TEAM</span></h2>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum</p>
-                            <form action="">
-                                <input type="email" name="email" placeholder="Your Email">
-                                <input type="text" name="subject" placeholder="Subject">
-                                <input type="text" name="message" placeholder="Your Message">
-                                <input type="submit" value="HIRE US">
-                            </form>
+                        <div class="icons">
                             <picture>
-                                <a href="#" ><img src="img/facebook.png" alt=""></a>
-                                <a href="#" ><img src="img/twitter.png" alt=""></a>
-                                <a href="#" ><img src="img/google.png" alt=""></a>
-                                <a href="#" ><img src="img/ball.png" alt=""></a>
-                                <a href="#" ><img src="img/be.png" alt=""></a>
+                                <a href="#"><img src="img/facebook.png" alt=""></a>
+                                <a href="#"><img src="img/twitter.png" alt=""></a>
+                                <a href="#"><img src="img/google.png" alt=""></a>
                             </picture>
                         </div>
                     </div>
+                    <div class="person">
+                        <div class="card"><img src="img/Warstwa_6.png" />
+                            <div class="info">
+                                <h2>Harvey Rube</h2>
+                                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <picture>
+                                <a href="#"><img src="img/facebook.png" alt=""></a>
+                                <a href="#"><img src="img/twitter.png" alt=""></a>
+                                <a href="#"><img src="img/google.png" alt=""></a>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="card"><img src="img/Warstwa_7.png" />
+                            <div class="info">
+                                <h2>Janet Pris</h2>
+                                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <picture>
+                                <a href="#"><img src="img/facebook.png" alt=""></a>
+                                <a href="#"><img src="img/twitter.png" alt=""></a>
+                                <a href="#"><img src="img/google.png" alt=""></a>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="card"><img src="img/Warstwa_8.png" />
+                            <div class="info">
+                                <h2>Kevin Ward</h2>
+                                <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <picture>
+                                <a href="#"><img src="img/facebook.png" alt=""></a>
+                                <a href="#"><img src="img/twitter.png" alt=""></a>
+                                <a href="#"><img src="img/google.png" alt=""></a>
+                            </picture>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        </footer>
-
-
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="footer">
+            <div class="footer-container">
+                <div class="container">
+                    <div class="description">
+                        <h2>SAY <span>HELLO</span></h2>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum</p>
+                        <form action="">
+                            <input type="email" name="email" placeholder="Your Email">
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea placeholder="Your Message"></textarea>
+                            <input class="btn-1" type="submit" value="HIRE US">
+                        </form>
+                        <picture>
+                            <a href="#" ><img src="img/facebook.png" alt=""></a>
+                            <a href="#" ><img src="img/twitter.png" alt=""></a>
+                            <a href="#" ><img src="img/google.png" alt=""></a>
+                            <a href="#" ><img src="img/ball.png" alt=""></a>
+                            <a href="#" ><img src="img/be.png" alt=""></a>
+                        </picture>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+
+    </footer>
+    <div class="design">
+        <p>© 2015 COPYRIGHT DESIGN STUDIO</p>
+        <p>DESIGNED BY SUMU.CO</p>
+    </div>
     <script>
         $(".menu-collapsed").click(function () {
             $(this).toggleClass("menu-expanded");

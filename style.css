@@ -5,12 +5,13 @@
 }
 
 body {
-    width: 100%;
     position: relative;
+    font-family: "Open Sans";
 }
 
+/* FIRST PAGE - INTRO */
+
 header {
-    width: 100%;
     height: 80vh;
     position: relative;
     background: url(img/Backgroud-header.png);
@@ -19,10 +20,9 @@ header {
     background-repeat: no-repeat;
 }
 
-.page-header {
+.intro {
     background-color: rgba(59, 67, 76, 0.9);
-    width: 100%;
-    height: 80vh;
+    height: 100%;
     position: relative;
 }
 
@@ -32,11 +32,12 @@ header {
     top: 17px;
 }
 
-.page-header .container,
+.intro .container,
 .job .container,
 .newsletter .container,
 .our-works .container,
-.workers .container,
+.opinion .container,
+.our-team .container,
 .footer .container {
     width: 80%;
     height: 100%;
@@ -44,30 +45,44 @@ header {
     position: relative;
 }
 
+/* Description */
 
-.page-header .container h1 {
-    width: 300px;
-    height: 52px;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30.5px;
-    font-weight: 800;
-    line-height: 16.8px;
-}
-
-.page-header .container p {
-    width: 280px;
-    height: 65px;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+.description {
     text-align: center;
 }
 
-.page-header .container h1 span {
+.description h1 {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.description h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #3b434c;
+    padding: 30px;
+}
+
+.description span {
     color: #f7600e;
 }
+
+.description p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.intro .description {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Navigation */
 
 .b-a,
 .bar,
@@ -168,38 +183,42 @@ header {
     transform: rotate(-45deg);
 }
 
-.description {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+/* Button */
 
 .buttons {
     position: absolute;
+    bottom: 80px;
     width: 100%;
-    bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
-.buttons button:nth-of-type(1) {
+.btn-1 {
     width: 130px;
-    height: 30px;
+    height: 40px;
     border: none;
     border-radius: 10px;
     background-color: #f7600e;
     color: white;
 }
 
-.buttons button:nth-of-type(2) {
+.btn-2,
+.btn-3 {
     width: 130px;
-    height: 30px;
+    height: 40px;
     border: none;
     background-color: transparent;
     color: white;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.btn-3 {
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+/* Arrow */
 
 .arrow {
     position: absolute;
@@ -210,8 +229,8 @@ header {
 
 .arrow span {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-bottom: 5px solid white;
     border-right: 5px solid white;
     transform: rotate(45deg);
@@ -243,36 +262,36 @@ header {
     }
 }
 
-.job {
-    width: 100%;
-}
+/* SECOND PAGE - JOB */
 
-.job .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.products {
+.product {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 30px 0;
-    font-family: "Open Sans";
+    margin: 60px 0;
 }
 
-.products h2 {
-    margin: 20px 0;
+.product h2 {
+    margin: 20px auto;
+    font-size: 16px;
+    color: #3b434c;
+    font-size: 16px;
+    line-height: 40px;
 }
 
-.products p {
-    width: 200px;
+.product p {
+    width: 158px;
+    height: 66px;
+    color: #3b434c;
+    font-size: 14px;
+    line-height: 26px;
     margin: 0 auto;
 }
 
+/* THIRD PAGE - NEWSLETTER */
+
 .newsletter {
-    width: 100%;
     height: 250px;
-    position: relative;
     background: url(img/tablet.png);
     background-position: -920px;
     background-size: cover;
@@ -280,21 +299,23 @@ header {
 }
 
 .newsletter-container {
-    width: 100%;
     height: 100%;
     position: relative;
     background-color: rgba(59, 67, 76, 0.9);
 }
 
 .newsletter-container form {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.newsletter-container input {
-    width: 275px;
+.newsletter-container input,
+.footer-container input,
+textarea {
+    width: 100%;
     height: 50px;
     text-align: center;
     margin: 20px 0;
@@ -302,53 +323,12 @@ header {
     border: none;
 }
 
-.newsletter-container input:nth-of-type(2) {
-    border: none;
-    border-radius: 10px;
-    background-color: #f7600e;
-    color: white;
-    font-family: "Open Sans";
-    font-size: 16px;
-}
-
-.our-works {
-    width: 100%;
-}
-
-.description-work {
-    width: 100%;
-    text-align: center;
-    margin: 30px 0;
-}
-
-h2 {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 35px;
-}
-
-h2 span {
-    color: #f7600e;
-}
-
-.description-work p {
-    color: #3b434c;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-weight: 400;
-    margin: 10px 0;
-}
-
-.our-works .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+/* FOURTH PAGE - OUR WORKS */
 
 .card {
-    width: 220px;
-    height: 220px;
-    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    margin: 30px auto;
     border-radius: 15px;
     padding: 1.5rem;
     background: white;
@@ -442,118 +422,74 @@ h2 span {
     color: #f7600e;
 }
 
-.btn {
-    width: 130px;
-    height: 30px;
-    margin: 20px auto;
-    border: 1px solid rgba(59, 67, 76, 0.2);
-    border-radius: 10px;
-    background-color: transparent;
-    color: #3b434c;
-    font-family: "Open Sans";
-    font-size: 14px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* FIFTH PAGE - OPINION */
 
 .opinion {
-    width: 100%;
-    height: 430px;
-    margin: 20px 0;
     background: url(img/woman-690036.png);
+    background-position: -900px;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.opinion .container {
+.opinion-container {
+    height: 100%;
     background-color: rgba(59, 67, 76, 0.9);
-    height: 100%;
-}
-
-.opinion .container .slider {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.caption img {
-    margin: 0 auto;
-    padding: 30px 0;
-    display: block;
-}
-
-.caption h2 {
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    text-align: center;
-    margin: 10px 0;
-    color: #ffffff;
-}
-
-.caption p {
-    font-family: "Open Sans";
-    font-size: 18px;
-    text-align: center;
-    margin: 30px 0;
-    color: #ffffff;
-}
-
-.footer {
-    width: 100%;
-    height: auto;
-    background: url(img/city-937541.png);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.footer .container {
-    background-color: rgba(59, 67, 76, 0.9);
-    height: 100%;
-    width: 100%;
-
-}
-
-.footer .form {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.form h2 {
     padding: 20px 0;
 }
 
-.caption form {
-    display: flex;
-    flex-direction: column;
+.opinion img {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
 }
 
-.caption form input {
-    width: 275px;
-    height: 50px;
-    text-align: center;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: none;
-}
-
-.caption form input:nth-last-of-type(1) {
-    border: none;
-    border-radius: 10px;
-    background-color: #f7600e;
+.opinion .description h2 {
+    font-style: italic;
     color: white;
-    font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 25px;
 }
 
-.caption form input:nth-last-of-type(2) {
+.opinion .description {
+    font-size: 18px;
+}
+
+/* FIFTH PAGE - OUR TEAM */
+
+.icons picture {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SIXTH PAGE - SAY HELLO */
+
+footer {
+    background: url(img/city-937541.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container {
+    background-color: rgba(59, 67, 76, 0.9);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    height: 100%;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer textarea {
     height: 200px;
 }
 
-.caption picture {
-    display: flex;
-    justify-content: space-around;
+.design {
+    height: 100px;
+    background-color: #3b434c;
+}
+
+.design p {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px
 }
