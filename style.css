@@ -203,7 +203,8 @@ header {
 }
 
 .btn-2,
-.btn-3 {
+.btn-3,
+.btn-4 {
     width: 130px;
     height: 40px;
     border: none;
@@ -213,9 +214,15 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.btn-3 {
+.btn-3,
+.btn-4 {
     display: block;
     margin: 0 auto 40px auto;
+}
+
+.btn-4 {
+    color: black;
+    border: 1px solid #3b434c;
 }
 
 /* Arrow */
@@ -455,9 +462,18 @@ textarea {
 
 /* FIFTH PAGE - OUR TEAM */
 
+.our-works .description p,
+.our-team .description p {
+    color: black;
+}
+
 .icons picture {
     display: flex;
     justify-content: space-around;
+}
+
+.our-team {
+    margin-bottom: 30px;
 }
 
 /* SIXTH PAGE - SAY HELLO */
@@ -482,8 +498,15 @@ footer {
     height: 200px;
 }
 
+.footer picture {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+}
+
 .design {
-    height: 100px;
+    height: 120px;
     background-color: #3b434c;
 }
 
@@ -491,5 +514,5 @@ footer {
     color: #ffffff;
     font-size: 16px;
     text-align: center;
-    line-height: 50px
+    line-height: 60px
 }
