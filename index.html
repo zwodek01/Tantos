@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
-    </div> -->
+    </div>
 
     <header>
         <section class="intro">
@@ -277,24 +277,24 @@
         <p>DESIGNED BY SUMU.CO</p>
     </div>
     <script>
-        var preloaderEl = document.querySelector('#preloader');
+        const preloaderEl = document.querySelector('#preloader');
 
-        // window.addEventListener('load', function () {
-        //     preloaderEl.classList.add('preloader-hiding');
-        //     preloaderEl.addEventListener('transitionend', function () {
-        //         this.classList.add('preloader-hidden');
-        //         this.classList.remove('preloader-hiding');
-        //     })
-        // })
-
-
-        setTimeout(function () {
+        window.addEventListener('load', function () {
             preloaderEl.classList.add('preloader-hiding');
             preloaderEl.addEventListener('transitionend', function () {
                 this.classList.add('preloader-hidden');
                 this.classList.remove('preloader-hiding');
             })
-        }, 1500)
+        })
+
+
+        // setTimeout(function () {
+        //     preloaderEl.classList.add('preloader-hiding');
+        //     preloaderEl.addEventListener('transitionend', function () {
+        //         this.classList.add('preloader-hidden');
+        //         this.classList.remove('preloader-hiding');
+        //     })
+        // }, 1500)
 
 
         $(".menu-collapsed").click(function () {
