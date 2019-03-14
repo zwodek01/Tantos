@@ -9,6 +9,65 @@ body {
     font-family: "Open Sans";
 }
 
+/* Preloader */
+
+#preloader {
+    background-color: rgba(59, 67, 76);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .35s ease;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: show-hide 1s ease infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 300ms;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 600ms;
+}
+
+@keyframes show-hide {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+#preloader.preloader-hiding {
+    opacity: 0;
+}
+
+#preloader.preloader-hidden {
+    display: none;
+}
+
+
 /* FIRST PAGE - INTRO */
 
 header {
@@ -28,8 +87,8 @@ header {
 
 .logo {
     position: absolute;
-    right: 10px;
-    top: 17px;
+    right: 20px;
+    top: 33px;
 }
 
 .intro .container,
@@ -91,7 +150,6 @@ header {
     transition: all 0.25s;
     content: "";
     position: absolute;
-    left: px;
     height: 3px;
     width: 30px;
     border-radius: 15px;
@@ -117,8 +175,8 @@ header {
 
 .bar {
     position: fixed;
-    left: 12px;
-    top: 24px;
+    left: 20px;
+    top: 40px;
 }
 
 .bar:before {
@@ -157,7 +215,6 @@ header {
 }
 
 .menu-expanded a {
-
     transition: all 0.15s;
     text-decoration: none;
     font-size: 2em;
@@ -165,10 +222,6 @@ header {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* .menu-expanded a:hover {
-    color: #f7600e;
-} */
 
 .menu-expanded .bar {
     background-color: transparent;
@@ -203,8 +256,7 @@ header {
 }
 
 .btn-2,
-.btn-3,
-.btn-4 {
+.btn-3 {
     width: 130px;
     height: 40px;
     border: none;
@@ -214,13 +266,9 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.btn-3,
-.btn-4 {
+.btn-3 {
     display: block;
     margin: 0 auto 40px auto;
-}
-
-.btn-4 {
     color: black;
     border: 1px solid #3b434c;
 }
@@ -322,7 +370,7 @@ header {
 .newsletter-container input,
 .footer-container input,
 textarea {
-    width: 100%;
+    width: 93%;
     height: 50px;
     text-align: center;
     margin: 20px 0;
@@ -460,7 +508,7 @@ textarea {
     font-size: 18px;
 }
 
-/* FIFTH PAGE - OUR TEAM */
+/* SIXTH PAGE - OUR TEAM */
 
 .our-works .description p,
 .our-team .description p {
@@ -476,7 +524,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-/* SIXTH PAGE - SAY HELLO */
+/* SEVENTH PAGE - SAY HELLO */
 
 footer {
     background: url(img/city-937541.png);
@@ -515,4 +563,253 @@ footer {
     font-size: 16px;
     text-align: center;
     line-height: 60px
+}
+
+/* MOBILE */
+
+/* LANDSCAPE LOOK */
+
+@media (orientation: landscape) {
+
+    /* Buttons */
+
+    .buttons .btn-1,
+    .buttons .btn-2 {
+        position: relative;
+        bottom: -50px;
+    }
+
+    /* SECOND PAGE - JOB and FOURTH PAGE - OUR WORKS and SIXTH PAGE - OUR TEAM*/
+
+    .job .container,
+    .our-works .wrapper,
+    .our-team .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .product {
+        margin: 40px;
+        padding-bottom: 30px;
+    }
+
+    /* Navigation */
+
+    .menu-expanded {
+        line-height: 50px;
+    }
+
+    .menu-expanded a {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+    .menu-expanded {
+        line-height: 80px;
+    }
+
+    .menu-expanded a {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+
+    /* Buttons */
+
+    .buttons .btn-1,
+    .buttons .btn-2 {
+        bottom: -60px;
+    }
+
+    /* Navigation */
+
+    .menu-expanded {
+        line-height: 40px;
+    }
+
+    .menu-expanded a {
+        font-size: 1em;
+    }
+
+
+    /* SECOND PAGE - JOB */
+
+    .product {
+        margin: 20px 0;
+    }
+
+    /* FOURTH PAGE - OUR WORKS */
+
+    .our-works .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* FOURTH PAGE - OUR WORKS and SIXTH PAGE - OUR TEAM */
+
+    .card {
+        width: 200px;
+    }
+}
+
+
+/* PORTRAIT LOOK */
+
+@media (min-width: 766px) and (orientation: portrait) {
+    /* Description */
+
+    .description h1 {
+        font-size: 60px;
+    }
+
+    .description p {
+        font-size: 25px;
+    }
+
+    .description h2 {
+        font-size: 35px;
+    }
+
+    /* Buttons */
+
+    .buttons {
+        bottom: 27.5%;
+    }
+
+    .btn-1,
+    .btn-2,
+    .btn-3 {
+        width: 210px;
+        height: 50px;
+    }
+
+    /* SECOND PAGE - JOB and FOURTH PAGE - OUR WORKS and SIXTH PAGE - OUR TEAM */
+
+    .job .container,
+    .our-works .wrapper,
+    .our-team .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .product {
+        margin: 50px;
+    }
+
+    .newsletter form {
+        display: flex;
+    }
+
+    .newsletter .btn-1 {
+        margin: 20px;
+        width: 269px;
+        height: 50px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1025px) {
+    .description h1 {
+        font-size: 70px;
+    }
+
+    .description p {
+        font-size: 25px;
+    }
+
+    .menu-expanded a:hover {
+        color: #f7600e;
+    }
+
+    .btn-1,
+    .btn-2,
+    .btn-3 {
+        width: 210px;
+        height: 50px;
+        transition: 0.5s;
+    }
+
+    .btn-1:hover,
+    .btn-3:hover,
+    .btn-2:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .our-works .btn-3:hover {
+        color: white;
+        background-color: #f7600e;
+        border: none;
+    }
+
+    .btn-2:hover {
+        background-color: #f7600e;
+        border: none;
+    }
+
+
+
+    .product {
+        margin: 20px;
+    }
+
+    .our-works .container {
+        width: 100%;
+    }
+
+
+    .our-works .wrapper,
+    .our-team .wrapper {
+        justify-content: center;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .newsletter form {
+        display: flex;
+    }
+
+    .newsletter .btn-1 {
+        margin: 20px;
+        width: 269px;
+        height: 50px;
+    }
+
+    .footer-container form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-container input {
+        width: 45%;
+        height: 50px;
+        margin: 20px;
+    }
+
+    .footer .btn-1 {
+        width: 210px;
+        height: 50px;
+    }
+
+    .footer picture {
+        justify-content: flex-end;
+    }
+
+    .footer picture img {
+        margin: 0 10px;
+    }
+
 }
